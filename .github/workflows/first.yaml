@@ -1,0 +1,10 @@
+name: my b11 app
+on: push
+
+jobs:
+  testing: 
+    runs-on: ubuntu-latest
+    steps:
+      - name: print name
+        run: echo "hello b11 candidates"
+        
