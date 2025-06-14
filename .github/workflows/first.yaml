@@ -6,5 +6,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: print name
-        run: echo "hello b11 candidates"
-        
+        run: cat /etc/os-release
