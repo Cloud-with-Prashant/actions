@@ -5,5 +5,13 @@ jobs:
   testing: 
     runs-on: ubuntu-latest
     steps:
-      - name: print name
-        run: cat /etc/os-release
+
+      - name: checkout to repo 
+        uses: actions/checkout@v4 
+
+      - name: list files from directory 
+        uses: |
+              ls -la 
+              cat README.md
+      
+      
