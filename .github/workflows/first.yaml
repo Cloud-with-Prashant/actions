@@ -1,13 +1,15 @@
 name: my b11 app
-on: push
+on: workflow_dispatch
 
 jobs:
   testing: 
     runs-on: ubuntu-latest
     steps:
-
       - name: checkout to repo 
         uses: actions/checkout@v4 
+
+      - name: list repo files 
+        run: ls -l
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
