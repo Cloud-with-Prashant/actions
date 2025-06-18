@@ -28,11 +28,12 @@ jobs:
           username: ${{ vars.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
 
-      - name: Build and push
-        uses: docker/build-push-action@v6
+      - name: Build and push Docker image
+        uses: docker/build-push-action@v5
         with:
+          context: .
           push: true
-          tags: b11/app:latest
+          tags: ${{ vars.DOCKER_USERNAME }}/my-simple-app:latest
 
 
 
