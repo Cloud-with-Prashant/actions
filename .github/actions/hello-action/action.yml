@@ -1,0 +1,7 @@
+name: "Hello Action"
+description: "Prints a hello message"
+runs:
+  using: "composite"
+  steps:
+    - run: ./hello.sh
+      shell: bash
