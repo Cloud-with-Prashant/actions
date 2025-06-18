@@ -3,5 +3,5 @@ description: "Prints a hello message"
 runs:
   using: "composite"
   steps:
-    - run: ./hello.sh
+    - run: /home/runner/work/actions/actions/.github/actions/hello-action/hello.sh
       shell: bash
